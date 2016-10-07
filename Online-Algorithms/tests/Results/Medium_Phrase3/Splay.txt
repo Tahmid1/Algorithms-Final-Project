@@ -1,0 +1,4 @@
+Option: 1
+Order is: 
+Total-time Load-time - Compare-time
+8.17908 0.330457 7.84862 

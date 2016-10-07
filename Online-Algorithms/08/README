@@ -1,0 +1,45 @@
+CS35 Lab 8: Plagiarism Detector, AVL Trees
+
+Name 1: Tahmid Rahman	
+Name 2: Dylan Jeffers
+
+userName1: djeffer1
+userName2: trahman1
+
+---------------------------------
+The questions are posted on the write-up.  Please answer
+them here:
+
+1. Our destructor performs a post-order traversal of the tree. It does so because any other traversal would delete a node before deleting its children, making its children unreachable and un-deletable.
+
+2. The heights of the trees when using AVLS (i.e. after balancing) are smaller. This makes sense since a balanced tree should have an average height of log(n) where n is the number of items in the tree, whereas a non-balanced tree can have a height as large as the number of items in the tree (i.e. all items are down the left end or right end of the tree).
+
+Because the heights are smaller, and because searching the tree is O(height), our runtime for cheat detector is faster when using balanced trees.
+
+When comparing running times for bigInOrder.txt, cheatDetector ran for 23 min using an AVL and 34 (we actually think its 30 because we didn't start the timer right at the start and we added an extra 7 minutes, but it could have been less) min using BST. 
+
+3. Solution: PreOrder
+   Pre-order traversal gives us root, left, right. So, We print out the chapter name, then go to one of children. Then we print out the root's left child's name and print out its grandchildren's names before going to the root's right child's name and printing out the right grandchildren's names.
+
+4. Solution: PostOrder
+   Post-order traversal gives us left, right, root. So, we check through all the children (i.e. subdirectories) before checking the whole directories.
+
+5. Solution: InOrder
+   In-order traversal gives us left, root, right. So we go 3, then *, then 5, then +, then 1, then *, then 2, i.e. 3*5, then 3*5+1, then that * 2. 
+
+----------------------------------
+Lab Questionnaire 
+(None of these questions will have an impact on your grade, this is to 
+help provide use the feedback we need to make the course the best it can be)
+
+
+Approximately, how many hours *per partner* did you take to complete
+this lab (provide your answer as a single integer on the line below).
+
+
+How difficult did you find this lab?
+(1-5, with 5 being very difficult and 1 being very easy)
+
+
+Describe the biggest challenge you faced on this lab.
+

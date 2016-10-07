@@ -1,0 +1,44 @@
+Observations
+
+Order is always Size, SPLAVL, Splay, AVL
+
+Range is 1
+
+C,R set to 10,10
+10000 .000287 .000174 .000285
+
+C,R set to 40,5
+10000 .000235 .000173 .000286
+
+C,R set to 80, 5
+10000 .000215 .000175 .000285
+
+C,R set to 160, 5
+10000 .000211 .000174 .000284
+
+C,R set to 320, 5
+10000 .000208 .000174 .000284
+
+C,R set to 900, 5
+10000 .000208 .000172 .000285
+
+increasing R to be very large doesn't help
+
+increasing C helps a lot and plateaus
+
+
+
+Range is 2
+
+Similar Trend
+
+Higher C value helps, making R very large or very small can hurt, but after a while doesn't make a difference
+
+As seen when we set C,R to be 100,5 vs C,R to be 10,5,
+Compare it to
+C,R to be 5,10 vs C,R to be 5,100
+
+
+
+
+
